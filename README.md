@@ -4,6 +4,7 @@ A complete cheat sheet for all essential Git commands and workflows, organized f
 
 ---
 
+
 ##  Setup & Configuration
 
 ```bash
@@ -22,7 +23,25 @@ git config --global core.editor "code --wait"
 # View all configurations
 git config --list
 ```
+## Working with Remotes
 
+### 🔍 Check Remote Repository
+```bash
+git remote
+git remote -v
+```
+## Add a Remote (if not added yet) through ide
+```bash
+git remote add origin https://github.com/Crashlar1/your-repo.git(given on repo)
+```
+```bash
+# First push (set upstream)
+git push -u origin main
+
+# Push changes to the same branch in future
+git push
+
+```
 ##  Getting Started
 ```bash
 # Initialize new repository
@@ -33,7 +52,7 @@ git init project-name           # Specific directory
 ```
 ```bash
 # Clone existing repository
-git clone https://github.com/user/repo.git
+git clone https://github.com/Crashlar1/repo.git
 git clone https://url.com/repo.git folder-name  # Into specific folder
 ```
 ##  Making Changes
